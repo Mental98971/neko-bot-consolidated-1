@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+.env
+# Ignore everything generated under data/ (SQLite DB, downloaded media,
+# etc. — *.db below also covers the DB specifically) but keep the
+# personality layer's own content data tracked: jokes.json and the
+# skins/presets JSON aren't runtime state, they're what admins are
+# meant to fork and edit.
+data/*
+!data/jokes.json
+!data/personality/
+sessions/
+*.db
+*.pkl
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
