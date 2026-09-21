@@ -29,5 +29,6 @@ jobs:
       - name: Run Bot
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+          OWNER_ID: ${{ secrets.OWNER_ID }}
           PYTHONPATH: novabot
         run: python -m bot
